@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+    text-decoration:  none;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+h1{ 
+    text-align: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.loader{
+    animation-name: loader;
+    animation-duration: 3s;
+    margin: 1rem auto;
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    animation-iteration-count: infinite;
+    
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+  .error {
+    color: white;
+    background-color: red;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .search-form {
+    margin: auto;
+    text-align: center;
+    input {
+      display: block;
+      margin: auto;
+      padding: 0.25rem;
+      border-radius: 0.25rem;
+      font-size:  1rem;
+    }
+  }
+
+  .header{
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    text-align: center;
+  
+  }
+.header > * {
+  margin: 1rem auto;
+}
+#posts {
+  display: grid;
+  margin: 1rem auto;
+  max-width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.post-card {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  background-color: gray;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  h2{
+    text-align: justify;
+  }
+  p{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.post-page{
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  background-color: rgba(128, 128, 128, 0.308);
+  aside{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+  }
+  hr{
+    border: thin solid white;
+    width: 80%;
+    margin: 2rem auto;
+  }
+  time {
+    margin: 1rem auto;
+    display: block;
+  }
+  article {
+    padding: 0 2rem;
+  }
+  img, audio,iframe, video, figure {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+  }
+}
